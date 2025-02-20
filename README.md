@@ -11,7 +11,6 @@
 * **本地文件解析**: 支持解析本地 Swagger JSON 文件，方便在本地开发和测试环境中使用。使用本地文件时，需要手动指定域名进行接口拼接测试。
     ```bash
     python3 swagger-api-scan.py -c swagger.json -x http://192.168.1.1
-```
 * **远程 URL 解析**: 支持直接解析远程 Swagger JSON 文件 URL，包括常见的 Swagger 接口文档路径格式。
     ```bash
     python3 swagger-api-scan.py -u http://XXX.com/v2/api-docs
