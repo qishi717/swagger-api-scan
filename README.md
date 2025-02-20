@@ -128,9 +128,11 @@ python3 swagger-api-scan.py -u http://xxxx.com/v2/api-docs -header "Cookie: your
 
 ### 5.截图示例
 
+![image](https://github.com/user-attachments/assets/7fd95421-a842-4bdb-8344-9d87433a6217)
+![image](https://github.com/user-attachments/assets/f4376548-fc7e-4bda-afa3-f18fd81f6940)
 
 
-## 注意事项
+ ## 注意事项
 
 * **DELETE 请求风险**:  工具在默认情况下会询问是否测试 `DELETE` 请求。请谨慎操作，避免误删服务器数据。
 * **测试环境**:  建议在测试环境或预发布环境中使用本工具进行安全测试，避免对生产环境造成不必要的影响。
@@ -139,4 +141,4 @@ python3 swagger-api-scan.py -u http://xxxx.com/v2/api-docs -header "Cookie: your
 
 ## 作者
 
-[@qishi](https://github.com/your-github-username)  
+[@qishi](https://github.com/qishi717)  
