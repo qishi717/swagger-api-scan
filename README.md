@@ -25,7 +25,7 @@
     * `name` 类参数填充姓名 (例如: `test_name`)
     * 其他常见参数类型也会根据预设的规则进行填充，以提高测试的有效性。
 * **敏感参数检测**:  自动分析 API 接口的参数，检测是否存在潜在的敏感参数，例如 `url`, `path`, `redirect`, `token`, `password` 等。这有助于发现可能引入 SSRF 等漏洞的接口。
-* **HTTP 代理支持**:  支持通过 `-p` 参数配置 HTTP 代理，方便在需要通过代理访问 API 的场景下使用。
+* **HTTP 代理支持**:  支持通过 `-p` 参数配置 HTTP 代理，方便观察流量和联动其他扫描工具。
     ```bash
     python3 swagger-api-scan.py -u http://xxxx.com/v2/api-docs -p http://127.0.0.1:8080
     ```
@@ -53,7 +53,7 @@
 确保你的系统已安装 Python 3.6 或更高版本，并安装以下依赖库：
 
 ```bash
-pip install -r 
+pip install -r requirements.txt 
 ```
 
 ### 2. 运行工具
@@ -141,3 +141,8 @@ python3 swagger-api-scan.py -u http://xxxx.com/v2/api-docs -header "Cookie: your
 ## 作者
 
 [@qishi](https://github.com/qishi717)  
+
+## 功能参考
+https://github.com/jayus0821/swagger-hack
+https://github.com/cws001/swagger-exp-knife4j
+https://github.com/lijiejie/swagger-exp 
